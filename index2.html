@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Web Design Task: Task</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      padding: 0 0 1em;
+    }
+
+    header {
+      background-color: #402101;
+      color: #fff;
+      border: 5px solid #000;
+    }
+
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em 1em;
+      /*border-top: 1px solid #999;*/
+    }
+
+    header .title {
+      font-size: 150%;
+      font-style: italic;
+      font-weight: bold;
+      padding: 1em;
+    }
+
+    main {
+      padding: 0 1em;
+    }
+
+    .cards {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .cards li {
+      border: 1px solid #000;
+
+      padding: 10px;
+    }
+
+    .cards h2 {
+      background-color: #73310c;
+      color: #fff;
+      margin: 0;
+      padding: 0.5em 1em;
+    }
+
+    .cards .inner {
+      padding: 0.5em 1em;
+    }
+
+    .sidebar {
+      background-color: #aa3a09;
+      border: 5px solid rgb(8, 8, 8);
+      padding: 0.5em 1em;
+      color: #060606;
+      margin: 0.5em;
+    }
+
+    @media screen and (min-width: 40em) {
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header .title {
+        flex: 2
+      }
+
+      header nav {
+        flex: 1
+      }
+
+      article {
+        display: cards;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+      }
+
+      nav ul {
+        display: flex;
+      }
+
+      nav li {
+        flex: 1;
+
+      }
+    }
+
+    @media screen and (min-width: 70em) {
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+      }
+
+      article {
+        margin-bottom: 0;
+      }
+
+      footer {
+        border-top: 1px solid #ccc;
+        margin-top: 2em;
+      }
+
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="title">Milestone 2</div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">website1</a>
+        </li>
+        <li>
+          <a href="">website2</a>
+        </li>
+        <li>
+          <a href="">website3</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <article>
+      <h1>coffee</h1>
+      <p>Coffee is a drink prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
+
+
+      <ul class="cards">
+        <li>
+          <h2>Coffee 1</h2>
+          <div class="inner">
+            <p>Iced coffee is a coffee beverage served cold.
+                 It may be prepared either by brewing coffee normally (i.e. carafe, French press, etc.) 
+                 and then serving it over ice or in cold milk or by brewing the coffee cold. 
+                 In hot brewing, sweeteners and flavoring may be added before cooling,
+                  as they dissolve faster.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Coffee 2</h2>
+          <div class="inner">
+            <p>Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee.
+                 Its strength varies with the number of shots of espresso and amount of water added. </p>
+          </div>
+        </li>
+        <li>
+          <h2>Coffee 3</h2>
+          <div class="inner">
+            <p>Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk. 
+                Variants include the chocolate-flavored mocha or replacing the coffee with another beverage base such as masala chai (spiced Indian tea), mate, matcha,etc. ; alternatives to milk, such as soy milk or almond milk, are also used.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Coffee 4</h2>
+          <div class="inner">
+            <p>Espresso is a coffee-brewing method of Italian origin, in which a small amount of nearly boiling water (about 90 °C or 190 °F) is forced under 9–10 bars of pressure through finely-ground coffee beans. 
+                Espresso can be made with a wide variety of coffee beans and roast degrees.</p>
+          </div>
+        </li>
+
+      </ul>
+    </article>
+    <aside class="sidebar">
+      <p>Which coffee is your favourite ?</p>
+
+    </aside>
+  </main>
+
+</body>
+
+</html>
